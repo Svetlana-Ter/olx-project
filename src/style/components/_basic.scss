@@ -1,0 +1,72 @@
+:root {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.02em;
+  background-color: $body-color;
+  color: $basic;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile-upper) {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  @media screen and (min-width: $table-upper) {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: $table-upper;
+  }
+}
+
+.body-container {
+  max-width: 1281px;
+
+  margin-left: auto;
+  margin-right: auto;
+}

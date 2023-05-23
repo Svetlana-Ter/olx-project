@@ -1,0 +1,105 @@
+<header class="header-container">
+
+    <button class="header-add_button"><svg class="header-icon__plus">
+            <use href="./src/images/symbol-defs.svg#icon-plus"></use>
+        </svg></button>
+
+    <div class="header__mobile-container">
+        <button class="search-button" data-modal="search">
+            <svg class="icon" width="24" height="24">
+                <use href="./src/images/symbol-defs.svg#icon-search"></use>
+            </svg>
+        </button>
+
+        <a href="/" class="logo">LOGO</a>
+
+        <button type="button" class="menu-button open" aria-label="Переключатель мобильного меню" aria-expanded="false"
+            data-menu-open>
+            <svg class="icon" width="24" height="24">
+                <use class="icon-menu" href="./src/images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+        </button>
+
+        <div class="header__button-container">
+            <button type="button" class="header__button authorization" auth-modal-open>
+                <span class="button__text">Реєстрація / Увійти</span>
+                <svg class="icon__account" width="24" height="24">
+                    <use class="" href="./src/images/symbol-defs.svg#icon-user-profile"></use>
+                </svg>
+            </button>
+            <button type="button" class="header__button account" hidden>
+                <svg class="icon__account online" width="20" height="20">
+                    <use class="" href="./src/images/symbol-defs.svg#icon-user-profile"></use>
+                </svg>
+                <span class="button__text my-office">Мій кабінет</span>
+                <div class="auth-hover">
+                    <a data-action="go-to-favorite">Мої оголошення</a>
+                    <a data-action="go-to-favorite">Обране</a>
+                </div>
+            </button>
+            <button type="button" class="header__button logout" hidden>
+                <svg class="icon__logout online" width="20" height="20">
+                    <use class="" href="./src/images/symbol-defs.svg#icon-logout"></use>
+                </svg>
+            </button>
+            <button type="button" class="header__create-add-btn modal-btn">Створити
+                оголошення!</button>
+        </div>
+    </div>
+
+    <div class="filter__container">
+        <div class="header-backdrop" header-backdrop>
+            <div class="mobile__menu-container is-open">
+
+                <button type="button" class="menu-button close" aria-label="Переключатель мобильного меню"
+                    aria-expanded="false" data-menu-close>
+                    <svg class="icon" width="24" height="24">
+                        <use class="icon-close" href="./src/images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <ul class="filter__inner">
+
+                    <li class="user__button-mobile">
+                        {{!-- <button type="button" class="user__button mobile" data-modal-open>Реєстрація /
+                            Увійти</button> --}}
+                    </li>
+
+                    <li class="filter__item">
+                        <button class="filter__button property">Нерухомість</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button transport">Транспорт</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button work">Робота</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button electronics">Електроніка</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button business">Бізнес та послуги</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button recreation">Відпочинок і спорт</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button free">Віддам безкоштовно</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button trade">Обмін</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <button class="filter__button-clear" type="reset">
+            Очистити фільтри
+        </button>
+
+    </div>
+
+
+
+</header>
